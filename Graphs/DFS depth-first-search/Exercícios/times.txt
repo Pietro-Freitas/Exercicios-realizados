@@ -1,0 +1,20 @@
+Uma professora pediu para os alunos mandarem uma lista de amizades para ela montar times e que pelo menos cada aluno tenha um amigo
+
+eentrada:
+numero de alunos e numero de ligações de amizades
+
+saida: 
+numero de times que podem ser formados
+
+condições:
+numero de alunos <= 10^5
+
+input:
+6 4
+1 2
+2 3
+4 6
+6 5
+
+output:
+2

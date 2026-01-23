@@ -1,0 +1,28 @@
+Dado um grafo não-direcionado, determine se ele contém algum ciclo usando DFS.
+
+Saída:
+"CICLO" se houver ciclo
+
+"ACICLICO" se não houver
+
+input:
+6 6
+1 2
+2 3
+3 4
+4 5
+5 6
+6 1
+
+ouput:
+CICLO
+
+input:
+5 4
+1 2
+2 3
+3 4
+4 5
+
+output:
+ACICLICO
