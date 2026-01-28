@@ -308,14 +308,27 @@ int extractBits(int n, int p, int k){
     
     00101010 & 00001111 = 00001010 = 10
 */
-int convertToBinaty(int n){
+int convertToBinary(int n){
     int ans = 0;
     int p = 1;
     while( n > 0){
         int last_bit = (n & 1);
         ans += p*last_bit;
         p *= 10;
-        ans = n>>1;
+        n = n>>1;
+    }
+    return ans;
+}
+
+int convertToDecimal(int binary) {
+    int ans = 0;
+    int p = 1;
+    
+    while (binary > 0) {
+        int last_digit = binary % 10;
+        ans += p * last_digit;
+        p *= 2;
+        binary /= 10;
     }
     return ans;
 }
